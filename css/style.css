@@ -1,0 +1,78 @@
+body{
+
+}
+
+legend{
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }   
+  
+  /* Create four equal columns */
+  .column {
+    flex: 25%;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center; /* align horizontal */
+
+
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+
+/* beautify table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  word-wrap: break-word;
+  word-break:break-all;
+}
+
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+
